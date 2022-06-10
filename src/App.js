@@ -1,8 +1,25 @@
-import React from "react"
+import React, { Fragment } from "react";
+
+// Navbar link
+import Navbar from "./components/Navbar/Navbar";
+
+// React Router Dom Link
+import {Routes, Route} from "react-router-dom";
+
+// Main Pages
+import News from "./pages/News/News";
+import Forum from "./pages/Forum/Forum";
+import Chat from "./pages/Chat/Chat";
 
 function App() {
   return (
-    <h1>UNIBOOK</h1>
+    <Fragment>
+        <Routes>
+          <Route element={<Forum/>} path="/forum" />
+          <Route element={<Chat />} path="/chat" />
+          <Route element={<News />} path="/news" />
+        </Routes>
+    </Fragment>
   );
 }
 
