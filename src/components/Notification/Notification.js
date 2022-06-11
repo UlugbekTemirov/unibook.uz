@@ -9,6 +9,7 @@ const Notification = () => {
     }
 
     return <>
+       <div onClick={oc_switcher_func} className={`${oc_switcher || "hidden"} overlay`}></div>
         <span onClick={oc_switcher_func} className="icon icon-notification"></span>
         <div className={`${oc_switcher || "hidden"} notification-modal`}>
             nothing yet

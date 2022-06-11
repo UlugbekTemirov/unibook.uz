@@ -1,5 +1,7 @@
 // For only global styles!
-
+* {
+    margin: 0;padding: 0;box-sizing: border-box;
+}
 
 // mask code
 .icon {
@@ -23,6 +25,28 @@
     background-color: #000000;
 }
 
+.icon-xmark {
+    mask-image: url(../icons/xmark-solid.svg);
+    -webkit-mask-image: url(../icons/xmark-solid.svg);
+    background-color: #000000;
+}
+
+.icon-google {
+    mask-image: url(../icons/google-brands.svg);
+    -webkit-mask-image: url(../icons/google-brands.svg);
+    background-color: #000000;
+}
+
 .hidden {
     display: none;
+}
+
+.navbar {
+    position: initial;
+}
+
+.btn-google {
+    padding: 15px 10px;
+    background-color: #ffffff;
+    border: 1px solid #222;
 }
