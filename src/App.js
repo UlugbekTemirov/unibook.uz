@@ -1,7 +1,9 @@
 import React, { Fragment } from "react";
 import Home from "./pages/Home/Home";
+
 // Navbar link
 import Navbar from "./components/Navbar";
+
 // React Router Dom Link
 import { Routes, Route } from "react-router-dom";
 
