@@ -1,5 +1,28 @@
 // For only global styles!
 
-main {
-    background-color: black;
+
+// mask code
+.icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    -webkit-mask-position: center;
+    vertical-align: middle;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.icon-notification {
+    mask-image: url(../icons/bell-solid.svg);
+    -webkit-mask-image: url(../icons/bell-solid.svg);
+    background-color: #000000;
+}
+
+.hidden {
+    display: none;
 }

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Notification from "../Notification"
 
 const Navbar = () => {
   return (
@@ -48,6 +49,7 @@ const Navbar = () => {
                 Search
               </button>
             </form>
+            <Notification />
           </div>
         </div>
       </nav>
