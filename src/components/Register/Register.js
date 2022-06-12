@@ -12,7 +12,7 @@ const Register = () => {
     }
 
     return <>
-            <button onClick={oc_switcher_func}>Register</button>
+            <button className="btn-auth" onClick={oc_switcher_func}>Register</button>
             <div className={`${oc_switcher || "hidden"} register-modal`}>
                 <div onClick={oc_switcher_func} className="overlay"></div>
             <div className="card">

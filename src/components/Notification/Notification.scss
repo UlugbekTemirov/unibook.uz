@@ -1,11 +1,19 @@
-.notification-modal {
-    width: 200px;
-    height: 400px;
-    border-radius: 10px;
-    border: 1px solid transparent;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: #ffffff;
-    position: absolute;
-    top: 50px;
-    right: 100px;
+.btn-notification {
+    position: relative !important;
+    background-color: transparent;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 15px;
+    .badge {
+        width: 15px;
+        height: 15px;
+        position: absolute !important;
+        top: 0px;
+        right: 0px;
+        background-color: red;
+        border-radius: 50%;
+        text-align: center;
+        padding: 3px 0;
+        font-size: 8px;
+    }
 }
