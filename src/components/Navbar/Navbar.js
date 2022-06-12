@@ -3,6 +3,7 @@ import Notification from "../Notification"
 import Login from "../Login"
 import Register from "../Register"
 import Search from "../Search";
+import "./Navbar.scss"
 
 const Navbar = () => {
   return (
@@ -22,22 +23,22 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link className="navbar-brand" to="/">
-              Hidden brand
+              Unibook.uz
             </Link>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" to="/forum">
-                  Forum
+                <Link className="nav-link d-flex" to="/forum">
+                  <span className="icon icon-comment"></span> <h6>Forum</h6>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/news">
-                  News
+                <Link className="nav-link d-flex" to="/news">
+                  <span className="icon icon-news"></span> <h6>News</h6>
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/chat">
-                  Chat
+                <Link className="nav-link d-flex" to="/chat">
+                  <span className="icon icon-conversation"></span> <h6>Chat</h6>
                 </Link>
               </li>
             </ul>

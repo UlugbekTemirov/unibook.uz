@@ -1,6 +1,6 @@
 // For only global styles!
 * {
-    margin: 0;padding: 0;box-sizing: border-box;
+    margin: 0;padding: 0;box-sizing: border-box;font-family: sans-serif;
 }
 
 // mask code
@@ -37,16 +37,64 @@
     background-color: #000000;
 }
 
+.icon-comment {
+    mask-image: url(../icons/comment-dots-solid.svg);
+    -webkit-mask-image: url(../icons/comment-dots-solid.svg);
+    background-color: #000000;
+}
+
+.icon-conversation {
+    mask-image: url(../icons/comments-solid.svg);
+    -webkit-mask-image: url(../icons/comments-solid.svg);
+    background-color: #000000;
+}
+
+.icon-news {
+    mask-image: url(../icons/bullhorn-solid.svg);
+    -webkit-mask-image: url(../icons/bullhorn-solid.svg);
+    background-color: #000000;
+}
+
+.icon-search {
+    mask-image: url(../icons/search.svg);
+    -webkit-mask-image: url(../icons/search.svg);
+    background-color: #606060;
+}
+
+
+// global colors
+// @if ($mode == 'dark') {
+//     $bgColor_1: #222;
+// } @else if ($mode == 'light'){
+//     $bgColor_1: #fff;
+// }
+
+// hidden class
 .hidden {
     display: none;
 }
 
 .navbar {
-    position: initial;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+
+// global button
 .btn-google {
     padding: 15px 10px;
     background-color: #ffffff;
     border: 1px solid #222;
+}
+
+.btn-auth {
+    padding: 0;
+    margin-left: 20px;
+    background-color: transparent;
+    color: #222;
+    border: 1px solid transparent;
+    font-size: 17px;
+}
+
+body {
+    height: 1200px;
 }

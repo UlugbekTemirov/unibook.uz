@@ -11,7 +11,7 @@ const Login = () => {
     }
 
     return <>
-        <button onClick={oc_switcher_func}>Login</button>
+        <button className="btn-auth" onClick={oc_switcher_func}>Login</button>
             <div className={`${oc_switcher || "hidden"} login-modal`}>
         <div onClick={oc_switcher_func} className={`${oc_switcher || "hidden"} overlay`}></div>
             <div className="card">
