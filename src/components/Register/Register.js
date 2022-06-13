@@ -21,11 +21,11 @@ const Register = () => {
                 <span onClick={oc_switcher_func} className="icon icon-xmark"></span>
             </div>
             <form className="card-body d-flex flex-column">
-                <button>Register with google</button>
-                <input type="text" placeholder="username or email"/>
-                <input type="password" placeholder="password" /> 
-                <input type="password" placeholder="confirm password" /> 
-                <button className="btn btn-outline-dark">Register</button>
+                <button className="btn-google btn"><span className="icon icon-google"></span> Register with google</button>
+                <input className="form-control" type="text" placeholder="username or email"/>
+                <input className="form-control" type="password" placeholder="password" /> 
+                <input className="form-control" type="password" placeholder="confirm password" /> 
+                <button className="btn btn-outline-dark mt-3">Register</button>
             </form>
             <div className="card-footer">
                 <div className="d-flex align-items-center">
