@@ -8,7 +8,7 @@ import "./Navbar.scss"
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg">
         <div className="container">
           <button
             className="navbar-toggler"
@@ -19,7 +19,7 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="icon icon-menu"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link className="navbar-brand" to="/">

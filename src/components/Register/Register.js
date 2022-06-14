@@ -22,7 +22,8 @@ const Register = () => {
             </div>
             <form className="card-body d-flex flex-column">
                 <button className="btn-google btn"><span className="icon icon-google"></span> Register with google</button>
-                <input className="form-control" type="text" placeholder="username or email"/>
+                <input className="form-control" type="text" placeholder="username"/>
+                <input className="form-control" type="email" placeholder="email"/>
                 <input className="form-control" type="password" placeholder="password" /> 
                 <input className="form-control" type="password" placeholder="confirm password" /> 
                 <button className="btn btn-outline-dark mt-3">Register</button>

@@ -1,0 +1,23 @@
+.btn-discussion {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.discussion-modal {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    border: 1px solid #222;
+    background-color: #222;
+    padding: 15px 0;
+    
+    input {
+        box-shadow: none !important;
+    }
+    textarea {
+        height: 100px !important;
+        box-shadow: none !important;
+        margin: 10px 0;
+    }
+}
