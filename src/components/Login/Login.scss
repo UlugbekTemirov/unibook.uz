@@ -15,14 +15,6 @@
     background-color: rgba(204, 204, 204, 0.9);
     backdrop-filter: blur(1px);
     overflow: hidden;
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: transparent;
-    }
     .card {
         width: 400px;
         position: absolute;

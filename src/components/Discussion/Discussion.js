@@ -11,6 +11,7 @@ const Discussion = () => {
 
     return <>
         <button onClick={oc_switcher_func} className="btn btn-success btn-discussion">Start discussion</button>
+        <div onClick={oc_switcher_func} className={`${oc_switcher || "hidden"} overlay overlay-discussion`}></div>
         <form className={`${oc_switcher || "hidden"} discussion-modal`}>
             <div className="container">
                 <input placeholder="Theme" className="form-control theme-of-discussion" type="text" />

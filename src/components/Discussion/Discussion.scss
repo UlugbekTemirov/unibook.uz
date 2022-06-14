@@ -3,6 +3,12 @@
     margin: 10px 0;
 }
 
+.overlay-discussion {
+    background-color: #222 !important;
+    opacity: 0.8;
+    backdrop-filter: blur(4px);
+}
+
 .discussion-modal {
     position: fixed;
     bottom: 0;

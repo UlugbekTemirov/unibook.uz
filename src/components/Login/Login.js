@@ -21,7 +21,7 @@ const Login = () => {
             </div>
             <form className="card-body d-flex flex-column">
                 <button className="btn btn-google d-flex align-items-center justify-content-center"> <span className="icon icon-google me-4"></span><h6 className="m-0 fs-6">Continue with google</h6></button>
-                <input className="form-control mt-3" type="text" placeholder="username or email"/>
+                <input className="form-control mt-3" type="text" placeholder="username"/>
                 <input className="form-control mt-3" type="password" placeholder="password" /> 
                 <div className="d-flex align-items-center mt-3 from-group">
                     <input id="stay_logged" name="stay_logged" type="checkbox" className="me-2" /> 
