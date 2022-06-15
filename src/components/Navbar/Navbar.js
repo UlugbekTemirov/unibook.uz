@@ -5,11 +5,10 @@ import Login from "../Login";
 import Register from "../Register";
 import Search from "../Search";
 import "./Navbar.scss";
-import icon from "../../icons/hamburger.png";
 import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const activePath = useLocation().pathname.slice(1);
+  const activePath = useLocation().pathname.split("/")[1];
   const [activePage, setActivePage] = useState("");
 
   const classNameHandler = (arg) => {
@@ -34,9 +33,7 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon">
-              <img className="img-fluid" src={icon} alt="hamburger-icon" />
-            </span>
+            <span className="navbar-toggler-icon"></span>
 
             <span className="icon icon-menu"></span>
           </button>

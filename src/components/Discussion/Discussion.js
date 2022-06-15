@@ -1,26 +1,85 @@
-import "./Discussion.scss"
-import { useState } from "react"
+import { useState } from "react";
+import { nanoid } from "@reduxjs/toolkit";
+import { addQuestion } from "../Forumbar/forum_slice";
+import { useDispatch } from "react-redux";
+import "./Discussion.scss";
 
-const Discussion = () => {
+const Discussion = ({ discussionHandler }) => {
+  const [category, setCategory] = useState("");
+  const [questionTitle, setQuestionTitle] = useState("");
+  const [questionContent, setQuestionContent] = useState("");
+  const dispatch = useDispatch();
 
-    const [oc_switcher, set_oc_switcher] = useState(false);
+  const questionDetails = {
+    id: nanoid(),
+    category,
+    questionTitle,
+    questionContent,
+    comments: [],
+  };
 
-    const oc_switcher_func = () => {
-        set_oc_switcher((prevState) => !prevState);
-    }
+  return (
+    <>
+      <div
+        onClick={discussionHandler}
+        className="overlay overlay-discussion"
+      ></div>
+      <form className=" discussion-modal">
+        <div className="container">
+          <input
+            value={questionTitle}
+            onChange={(e) => {
+              setQuestionTitle(e.target.value);
+            }}
+            placeholder="Theme"
+            className="form-control theme-of-discussion"
+            type="text"
+          />
 
-    return <>
-        <button onClick={oc_switcher_func} className="btn btn-success btn-discussion">Start discussion</button>
-        <div onClick={oc_switcher_func} className={`${oc_switcher || "hidden"} overlay overlay-discussion`}></div>
-        <form className={`${oc_switcher || "hidden"} discussion-modal`}>
-            <div className="container">
-                <input placeholder="Theme" className="form-control theme-of-discussion" type="text" />
-                <textarea className="form-control" placeholder="Write a problem here"></textarea>
-                <button type="submit" className="btn btn-success">Publish</button>
-                <button type="button" onClick={oc_switcher_func} className="btn btn-danger ms-3">Cancel</button>
-            </div>
-        </form>
+          <textarea
+            value={questionContent}
+            onChange={(e) => {
+              setQuestionContent(e.target.value);
+            }}
+            className="form-control"
+            placeholder="Write a problem here"
+          ></textarea>
+          <select
+            value={category}
+            onChange={(e) => {
+              setCategory(e.target.value);
+            }}
+            className="form-select mb-2"
+            aria-label="Default select example"
+          >
+            <option selected>Select Category</option>
+            <option value="Math">Math</option>
+            <option value="English">English</option>
+            <option value="Programming">Programming</option>
+            <option value="Chemistry">Chemistry</option>
+          </select>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              dispatch(addQuestion(questionDetails));
+              discussionHandler();
+            }}
+            type="submit"
+            className="btn btn-success"
+          >
+            Publish
+          </button>
+          <button
+            type="button"
+            onClick={discussionHandler}
+            className="btn btn-danger ms-3"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
     </>
-}
+  );
+};
 
-export default Discussion
+export default Discussion;

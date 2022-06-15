@@ -23,7 +23,7 @@
   }
   .card {
     padding: 1.5rem 0.5rem 0 0.5rem;
-    width: 400px;
+    width: 350px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,13 +97,6 @@
         }
       }
 
-      .icon-xmark {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        width: 10px;
-        height: 10px;
-      }
       .card-footer {
         span {
           cursor: pointer;
@@ -112,7 +105,7 @@
     }
     .icon-xmark {
       position: absolute;
-      right: 10px;
+      right: 5px;
       top: -5px;
       width: 10px;
       height: 10px;

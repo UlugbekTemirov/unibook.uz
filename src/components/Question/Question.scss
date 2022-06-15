@@ -1,0 +1,35 @@
+.questions-block {
+  cursor: pointer !important;
+  padding: 0.5rem 2.5rem;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  .user-account {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: red;
+    border-radius: 100%;
+    font-family: sans-serif;
+  }
+  .question-blog {
+    margin: auto;
+    text-align: start;
+    text-transform: capitalize;
+  }
+  .comments-block {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

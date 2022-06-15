@@ -1,72 +1,74 @@
 // For only global styles!
 * {
-    margin: 0;padding: 0;box-sizing: border-box;font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 // mask code
 .icon {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    mask-repeat: no-repeat;
-    mask-size: 100%;
-    mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: 100%;
-    -webkit-mask-position: center;
-    vertical-align: middle;
-    background-color: #ffffff;
-    cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  -webkit-mask-position: center;
+  vertical-align: middle;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 .icon-notification {
-    mask-image: url(../icons/bell-solid.svg);
-    -webkit-mask-image: url(../icons/bell-solid.svg);
-    background-color: #222;
+  mask-image: url(../icons/bell-solid.svg);
+  -webkit-mask-image: url(../icons/bell-solid.svg);
+  background-color: #222;
 }
 
 .icon-xmark {
-    mask-image: url(../icons/xmark-solid.svg);
-    -webkit-mask-image: url(../icons/xmark-solid.svg);
-    background-color: #222;
+  mask-image: url(../icons/xmark-solid.svg);
+  -webkit-mask-image: url(../icons/xmark-solid.svg);
+  background-color: #222;
 }
 
 .icon-google {
-    mask-image: url(../icons/google-brands.svg);
-    -webkit-mask-image: url(../icons/google-brands.svg);
-    background-color: #222;
+  mask-image: url(../icons/google-brands.svg);
+  -webkit-mask-image: url(../icons/google-brands.svg);
+  background-color: #222;
 }
 
 .icon-comment {
-    mask-image: url(../icons/comment-dots-solid.svg);
-    -webkit-mask-image: url(../icons/comment-dots-solid.svg);
-    background-color: #222;
+  mask-image: url(../icons/comment-dots-solid.svg);
+  -webkit-mask-image: url(../icons/comment-dots-solid.svg);
+  background-color: #222;
 }
 
 .icon-conversation {
-    mask-image: url(../icons/comments-solid.svg);
-    -webkit-mask-image: url(../icons/comments-solid.svg);
-    background-color: #222;
+  mask-image: url(../icons/comments-solid.svg);
+  -webkit-mask-image: url(../icons/comments-solid.svg);
+  background-color: #222;
 }
 
 .icon-news {
-    mask-image: url(../icons/bullhorn-solid.svg);
-    -webkit-mask-image: url(../icons/bullhorn-solid.svg);
-    background-color: #222;
+  mask-image: url(../icons/bullhorn-solid.svg);
+  -webkit-mask-image: url(../icons/bullhorn-solid.svg);
+  background-color: #222;
 }
 
 .icon-search {
-    mask-image: url(../icons/search.svg);
-    -webkit-mask-image: url(../icons/search.svg);
-    background-color: #222;
+  mask-image: url(../icons/search.svg);
+  -webkit-mask-image: url(../icons/search.svg);
+  background-color: #222;
 }
 
 .icon-menu {
-    mask-image: url(../icons/bars-solid.svg);
-    -webkit-mask-image: url(../icons/bars-solid.svg);
-    background-color: #222;
+  mask-image: url(../icons/bars-solid.svg);
+  -webkit-mask-image: url(../icons/bars-solid.svg);
+  background-color: #222;
 }
-
 
 // global colors
 // @if ($mode == 'dark') {
@@ -77,39 +79,38 @@
 
 // hidden class
 .hidden {
-    display: none;
+  display: none;
 }
 
 .navbar {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
 
 // global button
 .btn-google {
-    padding: 15px 10px;
-    background-color: #ffffff;
-    border: 1px solid #222;
+  padding: 15px 10px;
+  background-color: #ffffff;
+  border: 1px solid #222;
 }
 
 .btn-auth {
-    padding: 0;
-    margin-left: 20px;
-    background-color: transparent;
-    color: #222;
-    border: 1px solid transparent;
-    font-size: 17px;
+  padding: 0;
+  margin-left: 20px;
+  background-color: transparent;
+  color: #222;
+  border: 1px solid transparent;
+  font-size: 17px;
 }
 
 body {
-    height: 1200px;
+  height: 1200px;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
 }
