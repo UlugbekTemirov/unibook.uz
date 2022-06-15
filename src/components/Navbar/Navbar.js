@@ -23,7 +23,9 @@ const Navbar = () => {
 
   return (
     <>
+
       <nav className="navbar navbar-expand-lg bg-light p-lg-3 mb-3">
+      <nav className="navbar navbar-expand-lg">
         <div className="container">
           <button
             className="navbar-toggler "
@@ -34,9 +36,13 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
+
             <span className="navbar-toggler-icon">
               <img className="img-fluid" src={icon} alt="hamburger-icon" />
             </span>
+
+            <span className="icon icon-menu"></span>
+
           </button>
           <Link className="navbar-brand" to="/">
             Unibook.uz

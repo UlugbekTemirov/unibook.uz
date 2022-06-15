@@ -47,8 +47,24 @@
   ul.navbar-nav {
     justify-content: center;
     align-items: center;
+
   }
   .extra {
     margin-bottom: 10px;
   }
 }
+
+    margin: 0 10px;
+    h6 {
+        text-decoration: none;
+        color: #222;
+        margin: 0;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+}
+
