@@ -1,5 +1,59 @@
 .nav-link {
+  align-items: center;
+  margin: 0 10px;
+  h6 {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #222;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.nav-item {
+  position: relative;
+  overflow: hidden;
+  .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  .underline {
+    width: 100%;
+    height: 3px;
+    background: #000;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: 0.2s all ease-in;
+  }
+}
+
+.nav-item.active .underline {
+  left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  ul.navbar-nav {
+    justify-content: center;
     align-items: center;
+
+  }
+  .extra {
+    margin-bottom: 10px;
+  }
+}
+
     margin: 0 10px;
     h6 {
         text-decoration: none;
@@ -13,3 +67,4 @@
 .navbar-toggler {
     box-shadow: none !important;
 }
+
