@@ -9,7 +9,7 @@ const Search = () => {
         placeholder="Search"
         aria-label="Search"
       />
-      <button className="search-button" type="submit">
+      <button className="search-button" type="button">
         <span className="icon icon-search"></span>
       </button>
     </form>

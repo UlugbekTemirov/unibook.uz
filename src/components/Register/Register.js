@@ -36,7 +36,11 @@ const Register = ({ activePageHandler }) => {
               type="password"
               placeholder="Confirm password"
             />
-            <button className="btn btn-outline-dark mt-3 register-btn">
+            <button
+              type="submit"
+              onClick={(e) => e.preventDefault()}
+              className="btn btn-outline-dark mt-3 register-btn"
+            >
               Register
             </button>
             <p className="continue text-center ">Regsiter with:</p>

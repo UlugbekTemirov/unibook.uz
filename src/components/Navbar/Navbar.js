@@ -88,9 +88,7 @@ const Navbar = () => {
               <Login activePageHandler={activePageHandler} />
             ) : activePage === "register" ? (
               <Register activePageHandler={activePageHandler} />
-            ) : (
-              ""
-            )}
+            ) : null}
           </div>
         </div>
       </nav>
