@@ -44,6 +44,30 @@
 }
 
 @media only screen and (max-width: 600px) {
+  li.nav-item {
+    border-radius: 10px;
+  }
+  .mobile-menu {
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 0;
+    .underline {
+      height: 100%;
+      background-color: #ccc;
+      opacity: 0.8;
+      z-index: -1;
+      border-radius: 10px;
+    }
+    .mobile-menu-buttons {
+    }
+  }
   ul.navbar-nav {
     justify-content: center;
     align-items: center;

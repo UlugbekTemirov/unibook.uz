@@ -1,4 +1,25 @@
 .sidebar {
     height: 100%;
     border: 1px solid #000;
+    .btn-category {
+        box-shadow: none !important;
+        background-color: #ccc;
+        margin-bottom: 10px;
+    }
+    .category-list {
+
+        .category-name {
+            list-style-type: none;
+            margin: 10px 0;
+            border: 1px solid transparent;
+            width: fit-content;
+            padding: 0 15px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 200ms;
+            &:hover {
+                background-color: rgb(231, 231, 231);
+            }
+        }
+    }
 }
