@@ -6,6 +6,7 @@ import Register from "../Register";
 import Search from "../Search";
 import "./Navbar.scss";
 import { useLocation } from "react-router-dom";
+import UserProfile from "../UserProfile";
 
 const Navbar = () => {
   const activePath = useLocation().pathname.split("/")[1];
@@ -65,6 +66,7 @@ const Navbar = () => {
               <Search />
               <Notification />
             </div>
+            <UserProfile/>
             <div className="account d-flex justify-content-start">
               <button
                 onClick={() => {
