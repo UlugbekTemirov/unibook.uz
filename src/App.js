@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
 import Home from "./pages/Home/Home";
 
-// Navbar link
+// components link
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer"
 
 // React Router Dom Link
 import { Routes, Route } from "react-router-dom";
@@ -22,6 +23,7 @@ function App() {
         <Route element={<Chat />} path="/chat" />
         <Route element={<News />} path="/news" />
       </Routes>
+      <Footer />
     </>
   );
 }
