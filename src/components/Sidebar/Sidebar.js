@@ -67,7 +67,7 @@ const Sidebar = () => {
       ) : null}
       <div className="category-group">
         <button
-          className="btn btn-primary"
+          className="btn btn-category"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#collapseExample"
