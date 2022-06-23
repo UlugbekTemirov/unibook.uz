@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.scss";
-import { Link } from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -8,7 +8,7 @@ function Home() {
       <div className="about-unibook-section">
         <div className="container">
           <h1>
-            About <Link href="#">Unibook.uz</Link>
+            About <Link to="#">Unibook.uz</Link>
           </h1>
           <div className="row">
             <div className="col-lg-6">
