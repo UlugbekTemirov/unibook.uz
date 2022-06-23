@@ -27,9 +27,6 @@ const forumSlice = createSlice({
   name: "questions",
   initialState,
   reducers: {
-    // addQuestion: (state, { payload }) => {
-    //   state.questions = [...state.questions, payload];
-    // },
     removeQuestion: ({ questions }, { payload }) => {
       questions = questions.filter((question) => question.id !== payload);
     },
@@ -46,7 +43,7 @@ const forumSlice = createSlice({
       .addCase(fetchQuestions.rejected, (state) => {
         state.questionsLoadingStatus = "error";
       })
-      .addCase(addQuestion.fulfilled, (state, { payload, meta }) => {
+      .addCase(addQuestion.fulfilled, (state, { paylod, meta }) => {
         state.questions = [...state.questions, meta.arg];
       });
   },

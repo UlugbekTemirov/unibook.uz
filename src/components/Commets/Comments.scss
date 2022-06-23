@@ -1,0 +1,39 @@
+.comment {
+  margin-bottom: 5rem !important;
+  position: relative;
+  .image-box {
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    left: -4rem;
+    .user-image {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  }
+  .user-info {
+    .names {
+      display: flex;
+      align-items: center;
+      p {
+        margin: 0;
+        &:nth-child(1) {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  &-image {
+    width: 35rem;
+    height: 20rem;
+    border-radius: 1rem;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+    }
+  }
+}

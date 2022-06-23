@@ -1,11 +1,14 @@
 .questions-block {
   cursor: pointer !important;
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 3.5rem;
   position: relative;
   width: 100%;
+  &:hover {
+    background-color: #e7edf3;
+  }
   .user-account {
     position: absolute;
-    left: 0;
+    left: 1rem;
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
@@ -21,13 +24,12 @@
     font-family: sans-serif;
   }
   .question-blog {
-    margin: auto;
     text-align: start;
     text-transform: capitalize;
   }
   .comments-block {
     position: absolute;
-    right: 0;
+    right: 1rem;
     top: 50%;
     transform: translateY(-50%);
   }

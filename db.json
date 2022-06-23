@@ -1,60 +1,26 @@
 {
   "questions": [
     {
-      "id": "1",
-      "category": "Math",
-      "questionTitle": "JBDDFVNDIFKJVNIDFKJV",
-      "questionContent": "sdl;jfldskdfjnvkjdbvjkdbfvnjk,dfnvjk,dnvjk,dfnkvj,dmfnvkjdfnjvkdfnvjkdf",
-      "comments": [
-        {
-          "id": "sdfdkfdl;sf,d/s;d,f;s",
-          "commentContent": "Oh bro, this feature make us happy, because with this we can shorten our codes"
-        },
-        {
-          "id": "djfsodlkjfoslkdjfksdjlfsd",
-          "commentContent": "Hi! Than,ks for this extension. Is it possible to set who can view a user's location map to the admin/moderators only?"
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "category": "English",
-      "questionTitle": "JBDDFVNDIFKJVNIDFKJV",
-      "questionContent": "sdl;jfldskdfjnvkjdbvjkdbfvnjk,dfnvjk,dnvjk,dfnkvj,dmfnvkjdfnjvkdfnvjkdf",
-      "comments": [
-        {
-          "id": "ksdjfksjdflksdjf",
-          "commentContent": "this is related to the api itself, if you move the map around with the mouse will load fine everything. obtaining a google api key is not easy, so i will not change this one for now. 😉"
-        },
-        {
-          "id": "dsfldksfmlsdkfls",
-          "commentContent": " well, i've noticed that and seems to be a bug not related to my extension, but i will investigate."
-        }
-      ]
-    },
-    {
-      "id": "cWfl8Cuq_VrZ6Zm0RsuT7",
-      "category": "Programming",
-      "questionTitle": "as",
-      "questionContent": "sa",
-      "comments": []
-    },
-    {
-      "id": "Ib6oSlJ6wtnSDf0_l8AgN",
-      "category": "Math",
-      "questionTitle": "mathimatical problems",
-      "questionContent": "deivenjkjghbkjdeomwcrvenjkbdeowrmvkenj",
-      "comments": []
-    },
-    {
-      "id": "6Fs8CRoJzy0sDmtlIGdly",
+      "id": "AEz_sh579zTe9EZpJkUIA",
       "category": "Chemistry",
-      "questionTitle": "H2O",
-      "questionContent": "sw[]dlp[rvogibdewrcovenjde,clmsf;kdl",
+      "questionTitle": "Preparation for IELTS exam",
+      "questionContent": "Why is the Javari valley so dangerous?\nExperts say the area has become a hotbed for crime because of its remoteness and a lack of government oversight.\nAs well as clashes with poachers catching protected fish, it has also seen incursions by illegal gold-miners, loggers and drug-traffickers who smuggle cocaine from nearby Peru and Colombia.\nViolence has also grown as drug-trafficking gangs battle for control of the area's waterways to smuggle cocaine.\nThe region - which is about the size of Portugal - is known for violent conflicts between these various criminal groups, government agents and indigenous people. It was these conflicts that Mr Phillips and Mr Pereira were documenting.\nAnd days before the pair went missing, indigenous groups say Mr Pereira was threatened for campaigning against illegal fishing. He had repeatedly reported being threatened by loggers, miners and illegal fishermen in the past.\nThe search for the missing pair was initially criticised by relatives and campaign groups, who called on officials to act more quickly and broaden its scope.\nAs global outrage grew at the disappearance, the 10-day search expanded until it involved the army, navy and police.\nThe police also initially failed to praise the work of the indigenous communities who searched for the men and helped lead authorities to some of their belongings.\nWhen asked by the BBC why there was no mention of the local communities helping, they admitted it was an error and conceded that their support had been crucial.\n\nThis is reading pessage given fo us. But still I can't find key words, Can you help to find them",
       "comments": []
+    },
+
+    {
+      "id": "MkszYjx2NsWbXTQvmfpX5",
+      "category": "Math",
+      "questionTitle": "Math exam",
+      "questionContent": "I am suffering from solving one problem. We have exam tomorrow. What do you recommend to me to get rid of stress",
+      "comments": [
+        {
+          "id": "KCKojNSUbUc-sgUulQRCl",
+          "commentContent": "Bro drink more cofee, and don't think about anything related to exam. If you are ready for that you won't fail from that",
+          "commentImage": null
+        }
+      ]
     }
   ],
-  "categpries": [
-    "All, Math, English, Programming, Chemistry"
-  ]
+  "categories": ["All", "Math", "English", "Programming", "Chemistry"]
 }

@@ -6,7 +6,6 @@ import Register from "../Register";
 import Search from "../Search";
 import "./Navbar.scss";
 import { useLocation } from "react-router-dom";
-import UserProfile from "../UserProfile";
 
 const Navbar = () => {
   const activePath = useLocation().pathname.split("/")[1];
@@ -42,31 +41,27 @@ const Navbar = () => {
             Unibook.uz
           </Link>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav me-auto mb-lg-2 mb-lg-0 mobile-menu">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className={classNameHandler("forum")}>
-                <Link className="nav-link d-flex mobile-menu-buttons" to="/forum">
-                  <span className="icon icon-comment"></span> <h6>Forum</h6>
+                <Link className="nav-link d-flex" to="/forum">
+                  <h6>Forum</h6>
                 </Link>
-                <div className="underline"></div>
               </li>
               <li className={classNameHandler("news")}>
-                <Link className="nav-link d-flex mobile-menu-buttons" to="/news">
-                  <span className="icon icon-news"></span> <h6>News</h6>
+                <Link className="nav-link d-flex" to="/news">
+                  <h6>News</h6>
                 </Link>
-                <div className="underline"></div>
               </li>
               <li className={classNameHandler("chat")}>
-                <Link className="nav-link d-flex mobile-menu-buttons" to="/chat">
-                  <span className="icon icon-conversation"></span> <h6>Chat</h6>
+                <Link className="nav-link d-flex" to="/chat">
+                  <h6>Chat</h6>
                 </Link>
-                <div className="underline"></div>
               </li>
             </ul>
             <div className="extra d-flex align-items-center justify-content-center">
               <Search />
               <Notification />
             </div>
-            <UserProfile/>
             <div className="account d-flex justify-content-start">
               <button
                 onClick={() => {
