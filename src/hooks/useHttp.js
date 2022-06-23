@@ -5,16 +5,12 @@ export const useHttp = () => {
     body = null,
     headers = { "Content-type": "application/json" }
   ) => {
-    try {
-      const res = await fetch(url, { method, body, headers });
-      if (!res.ok) {
-        throw new Error(`Couldn't fecth ${url}, status ${res.status}`);
-      }
-      const data = res.json();
-      return await data;
-    } catch (e) {
-      console.log(e);
+    const res = await fetch(url, { method, body, headers });
+    if (!res.ok) {
+      throw new Error(`Couldn't fecth ${url}, status ${res.status}`);
     }
+    const data = res.json();
+    return await data;
   };
   return { request };
 };

@@ -1,0 +1,18 @@
+.text-editor {
+  box-shadow: 0 0 3rem #ddd;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  position: relative;
+  .btn-group {
+    button:hover {
+      color: #fff;
+    }
+  }
+  .send-btn {
+    background-color: #ef564f !important;
+    color: #fff;
+  }
+  .btn:focus {
+    box-shadow: none !important;
+  }
+}

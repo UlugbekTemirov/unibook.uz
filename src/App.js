@@ -11,6 +11,7 @@ import { Routes, Route } from "react-router-dom";
 import News from "./pages/News";
 import Forum from "./pages/Forum";
 import Chat from "./pages/Chat";
+import SingleQuestion from "./pages/SingleQuestion";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route element={<Forum />} path="/forum" />
         <Route element={<Chat />} path="/chat" />
         <Route element={<News />} path="/news" />
+        <Route element={<SingleQuestion />} path="/discussion/:id" />
       </Routes>
     </>
   );

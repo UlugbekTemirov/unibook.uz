@@ -44,21 +44,18 @@ const Navbar = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className={classNameHandler("forum")}>
                 <Link className="nav-link d-flex" to="/forum">
-                  <span className="icon icon-comment"></span> <h6>Forum</h6>
+                  <h6>Forum</h6>
                 </Link>
-                <div className="underline"></div>
               </li>
               <li className={classNameHandler("news")}>
                 <Link className="nav-link d-flex" to="/news">
-                  <span className="icon icon-news"></span> <h6>News</h6>
+                  <h6>News</h6>
                 </Link>
-                <div className="underline"></div>
               </li>
               <li className={classNameHandler("chat")}>
                 <Link className="nav-link d-flex" to="/chat">
-                  <span className="icon icon-conversation"></span> <h6>Chat</h6>
+                  <h6>Chat</h6>
                 </Link>
-                <div className="underline"></div>
               </li>
             </ul>
             <div className="extra d-flex align-items-center justify-content-center">

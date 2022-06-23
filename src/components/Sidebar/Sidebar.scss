@@ -1,4 +1,13 @@
 .sidebar {
-    height: 100%;
-    border: 1px solid #000;
+  height: 100%;
+  .category-group {
+    .category-list {
+      .category-name {
+        cursor: pointer;
+      }
+      .category-name.active {
+        color: #ef564f;
+      }
+    }
+  }
 }
