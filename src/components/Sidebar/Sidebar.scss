@@ -10,4 +10,13 @@
       }
     }
   }
+  .btn-category {
+    background-color: #ccc;
+    &:hover {
+      background-color: rgb(231, 231, 231);
+    }
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
 }
